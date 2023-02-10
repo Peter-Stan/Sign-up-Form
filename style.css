@@ -1,5 +1,23 @@
 body{
     display:flex;
+    align-items: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    
+}
+
+
+
+p {
+    font-size:30px;
+    margin-bottom: 150px;
+    color:rgb(247, 36, 166);
+    text-shadow:rgb(211, 122, 189);
+}
+
+.sign {
+    font-size: 40px;
+    color:rgb(247, 36, 166);
+    font-weight: bolder;
 }
 .image {
     width:1000px; 
@@ -25,4 +43,27 @@ img {
 
 button {
     margin-top: 20px;
+}
+
+.login {
+    border:none;
+    background-color: white;
+    font-size: large;
+    
+}
+.login:hover{
+    color:palevioletred;
+}
+
+.Create-button:hover {
+    background-color: rgb(247, 36, 166);;
+}
+.Create-button {
+    font-weight: bolder;
+    font-size: 35px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-radius:2em;
+    border: none;
+    background-color: rgb(211, 122, 189);
+    padding: 10px;
 }
