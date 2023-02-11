@@ -47,16 +47,16 @@
       <div>
         <label for="password">PASSWORD</label>
          </div>
-        <input type="password" id="" password= "password">
+        <input type="password" id="txtPassword" password= "password">
 
 
         <div>
           <label for="password">CONFIRM PASSWORD</label>
             </div>
-          <input type="password" id="" password="password">
+          <input type="password" id="txtConfirmPassword" password="password">
        </div>
 
-       <button type="submit" class="Create-button">
+       <button type="submit" class="Create-button" onclick="return Validate()">
         Create Account
        </button>
   
@@ -65,6 +65,16 @@
   </div>
 
 </form>
-        
+      <script type="text/javascript">
+        function Validate() {
+        var password = document.getElementById("txtPassword").value;
+        var confirmPassword = document.getElementById("txtConfirmPassword").value;
+        if (password != confirmPassword) {
+            alert("Passwords do not match.");
+            return false;
+        }
+        return true;
+    }
+      </script>  
 </body>
 </html>
